@@ -1,8 +1,9 @@
-public class Circle extends Figure{
+public class Circle implements Figure{
     double radio;
-    public Circle(String color, double radio){
-        super(color);
+    String color;
+    public Circle(double radio, String color){
         this.radio=radio;
+        this.color=color;
     }
     @Override
     public double area(){

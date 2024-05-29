@@ -1,11 +1,12 @@
-public class Triangle extends Figure{
+public class Triangle implements Figure{
     double base, altura, lado1, lado2;
-    public Triangle(String color, double base, double altura, double lado1, double lado2){
-        super(color);
+    String color;
+    public Triangle(double base, double altura, double lado1, double lado2, String color){
         this.base=base;
         this.altura=altura;
         this.lado1=lado1;
         this.lado2=lado2;
+        this.color=color;
     }
     @Override
     public double area(){

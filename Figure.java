@@ -1,9 +1,5 @@
-public abstract class Figure{
-    String color;
-    public Figure(String color){
-        this.color=color;
-    }
-    public abstract String getColor();
-    public abstract double perimeter();
-    public abstract double area();
+public interface Figure{
+    public String getColor();
+    public double perimeter();
+    public double area();
 }

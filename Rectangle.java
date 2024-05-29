@@ -1,9 +1,10 @@
-public class Rectangle extends Figure{
+public class Rectangle implements Figure{
     double base, altura;
-    public Rectangle(String color, double base, double altura){
-        super(color);
+    String color;
+    public Rectangle(double base, double altura, String color) {
         this.base=base;
         this.altura=altura;
+        this.color=color;
     }
     @Override
     public double area(){

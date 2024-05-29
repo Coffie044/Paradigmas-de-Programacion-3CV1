@@ -1,9 +1,10 @@
-public class Hexagon extends Figure{
+public class Hexagon implements Figure{
     double lado, apotema;
-    public Hexagon(String color, double lado, double apotema){
-        super(color);
+    String color;
+    public Hexagon(double lado, double apotema, String color){
         this.lado=lado;
         this.apotema=apotema;
+        this.color=color;
     }
     @Override
     public double area(){
